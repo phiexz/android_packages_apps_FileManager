@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -7,8 +7,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
 
 import android.content.Context;
 import android.content.Intent;

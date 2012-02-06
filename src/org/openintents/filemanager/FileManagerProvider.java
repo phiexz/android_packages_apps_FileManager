@@ -1,11 +1,11 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.openintents.filemanager.util.MimeTypeParser;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.MimeTypeParser;
+import org.openintents.cmfilemanager.util.MimeTypes;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.content.ContentProvider;
@@ -20,9 +20,9 @@ import android.util.Log;
 
 public class FileManagerProvider extends ContentProvider {
 
-	static final String FILE_PROVIDER_PREFIX = "content://org.openintents.filemanager";
+	static final String FILE_PROVIDER_PREFIX = "content://org.openintents.cmfilemanager";
 	private static final String TAG = "FileManagerProvider";
-	public static final String AUTHORITY = "org.openintents.filemanager";
+	public static final String AUTHORITY = "org.openintents.cmfilemanager";
 	private MimeTypes mMimeTypes;
 
 	@Override

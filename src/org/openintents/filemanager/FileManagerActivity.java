@@ -18,7 +18,7 @@
  * Based on AndDev.org's file browser V 2.0.
  */
 
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,9 +29,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.openintents.distribution.DistributionLibraryListActivity;
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypeParser;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypeParser;
+import org.openintents.cmfilemanager.util.MimeTypes;
 import org.openintents.intents.FileManagerIntents;
 import org.openintents.util.MenuIntentOptionsWithIcons;
 import org.xmlpull.v1.XmlPullParserException;
