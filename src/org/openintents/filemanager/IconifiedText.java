@@ -1,4 +1,4 @@
-package org.openintents.cmfilemanager;
+package org.openintents.filemanager;
 
 /* 
  * Copyright 2007 Steven Osborn 
@@ -16,6 +16,8 @@ package org.openintents.cmfilemanager;
  * limitations under the License. 
  */ 
 
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable; 
 
 /** @author Steven Osborn - http://steven.bitsetters.com */ 
@@ -25,6 +27,8 @@ public class IconifiedText implements Comparable<IconifiedText>{
      private String mInfo = "";
      private Drawable mIcon; 
      private boolean mSelectable = true; 
+     private boolean mSelected; 
+     private boolean mCheckBoxVisible;
 
      public IconifiedText(String text, String info, Drawable bullet) { 
           mIcon = bullet; 
@@ -32,7 +36,15 @@ public class IconifiedText implements Comparable<IconifiedText>{
           mInfo = info;
      } 
       
-     public boolean isSelectable() { 
+     public boolean isSelected() {
+     	return mSelected;
+     }
+
+ 	public void setSelected(boolean selected) {
+     	this.mSelected = selected;
+     }
+
+ 	public boolean isSelectable() { 
           return mSelectable; 
      } 
       
@@ -59,10 +71,23 @@ public class IconifiedText implements Comparable<IconifiedText>{
      public void setIcon(Drawable icon) { 
           mIcon = icon; 
      } 
+     
+     public void setIcon(Bitmap bitmap) {
+    	 mIcon = (new BitmapDrawable(bitmap));
+     }
       
      public Drawable getIcon() { 
           return mIcon; 
      } 
+     
+     // Used by the adapter
+     public Object getIconBitmap() {
+		if(mIcon instanceof BitmapDrawable){
+			return ((BitmapDrawable) mIcon).getBitmap();
+		}
+		
+		return mIcon;
+     }
 
      /** Make IconifiedText comparable by its name */ 
      
@@ -72,5 +97,13 @@ public class IconifiedText implements Comparable<IconifiedText>{
           else 
                throw new IllegalArgumentException(); 
      } 
+     
+     public void setCheckIconVisible(boolean visible) {
+    	 mCheckBoxVisible = visible;
+     }
+     
+     public boolean isCheckIconVisible() {
+    	 return mCheckBoxVisible;
+     }
 } 
 

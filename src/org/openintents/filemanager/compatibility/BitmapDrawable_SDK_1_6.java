@@ -1,4 +1,4 @@
-package org.openintents.cmfilemanager.compatibility;
+package org.openintents.filemanager.compatibility;
 
 import android.content.res.Resources;
 import android.graphics.Bitmap;

@@ -21,12 +21,20 @@
 	
 	<!-- Automatically filled in by Launchpad: -->
 	<string name="about_translators">Launchpad Contributions:
+  Alexander Sapronov https://launchpad.net/~warmonger
+  Daniel Winzen https://launchpad.net/~q-d
   Flosen https://launchpad.net/~flose
-  Peli https://launchpad.net/~peli0101
+  Giannis Konstantinidis https://launchpad.net/~giankonstantinidis
+  Hans https://launchpad.net/~hans-wuerstchen42
+  OpenIntents devs https://launchpad.net/~openintents-devs
+  Patrick Eigensatz https://launchpad.net/~p.eigensatz
+  Schrotti https://launchpad.net/~schrott-micha
+  cmdrhenner https://launchpad.net/~cmdrhenner
+  hani https://launchpad.net/~markushahnenkamm
   marco.jahn https://launchpad.net/~accounts+launchpad-net</string>
 	
-    <!-- Short explanation of the application -->
-    <string name="about_comments">OI Dateimanager ist ein offener Dateimanager, der nahtlos mit anderen Anwendungen zusammenarbeitet.</string>  
+    <!-- Short explanation of the application (max. 80 characters) -->
+    <string name="about_comments">Mit den OI Dateimanager können Sie Ihre Daten auf der SD-Karte verwalten.</string>  
 	
 	<!-- ***************************
 	     Applicatio-specific strings
@@ -35,18 +43,30 @@
     <string name="app_name">OI Dateimanager</string>
     
     <string name="menu_new_folder">Neuer Ordner</string>
+    
+    <!-- Multi select option menu -->
+    <string name="menu_multi_select">Mehrfachauswahl</string>
+
     <string name="menu_delete">Löschen</string>
     <string name="menu_rename">Umbenennen</string>
     <string name="menu_send">Senden</string>
     <string name="menu_open">Öffnen</string>
     <string name="menu_move">Verschieben</string>
-    <string name="menu_copy">Kopie</string>
-    <string name="menu_include_in_media_scan">Include in media scan</string>
-    <string name="menu_exclude_from_media_scan">Exclude from media scan</string>
+    <string name="menu_copy">Kopieren</string>
+    <string name="menu_details">Details</string>
+    <string name="menu_more">Mehr</string>
+    <string name="menu_compress">Komprimiere (ZIP)</string>
+    <string name="menu_extract">Entpacke (ZIP)</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_include_in_media_scan">In Mediensuche einschließen</string>
+    <string name="menu_exclude_from_media_scan">Von Mediensuche ausschließen</string>
+    <string name="menu_bookmark">Als Lesezeichnen hinzufügen</string>
+    <string name="menu_refresh">Aktualisieren</string>
     
     <string name="create_new_folder">Neuen Ordner erstellen</string>
     <string name="folder_name">Name des Ordners</string>
     <string name="file_name">Name des Ordners</string>
+    <string name="extension">Erweiterung (mit \'.\')</string>
     <string name="this_folder_is_empty">Dieser Ordner ist leer.</string>
     <string name="really_delete">Soll %s wirklich gelöscht werden?</string>
     <string name="file_deleted">Datei gelöscht.</string>
@@ -60,15 +80,40 @@
     <string name="move_button">Hierher verschieben</string>
     <string name="copy_title">Wählen Sie Zielverzeichnis für den Kopiervorgang</string>
     <string name="copy_button">Hierher kopieren</string>
+	<string name="deleting_files">Удаление файлов...</string>
+    <string name="title_warning_some_may_not_work">Achtung</string>
+    <string name="warning_some_may_not_work">Es könnte sein, dass einige der folgenden Optionen nicht funktionieren.</string>
+    <string name="show_warning_again">Zeige diese Warnung noch einmal</string>
+    
+    <!-- Strings for a multi select feature -->
+	<string name="really_delete_multiselect">Вы действительно хотите удалить %d файл(ы)?</string>
+    <string name="move_button_multiselect">Verschieben</string>
+    <string name="copy_button_multiselect">Kopieren</string>
+    <string name="delete_button_multiselect">Löschen</string>
+    <string name="compress_zip_button_multiselect">ZIP</string>
+    <string name="multiselect_title">Выберите несколько файлов</string>
+    <string name="error_selection">Пожалуйста выберите один или более файлов</string>
+    
+    <!-- Strings for details table -->
+    <string name="details_type">Typ</string>
+    <string name="details_type_folder">Ordner</string>
+    <string name="details_type_file">Datei</string>
+    <string name="details_type_other">Andere</string>
+    <string name="details_size">Größe</string>
+    <string name="details_permissions">Berechtigungen</string>
+    <string name="details_hidden">Versteckt</string>
+    <string name="details_lastmodified">Zuletzt geändert</string>
+    <string name="details_yes">Ja</string>
+    <string name="details_no">Nein</string>
     
     <!-- Construct a unique file name of a file called %s. -->
     <string name="copied_file_name">Kopie von %s</string>
     
     <!-- Construct a unique file name with number %1$d of a file called %2$s. -->
-    <string name="copied_file_name_2">Copy %1$d of %2$s</string>
+    <string name="copied_file_name_2">Копировать %1$d из %2$s</string>
     
-    <string name="media_scan_included">This folder will be included in the next media scan.</string>
-    <string name="media_scan_excluded">This folder will be excluded during the next media scan.</string>
+    <string name="media_scan_included">Dieser Ordner wird bei der nächsten Mediensuche einbezogen.</string>
+    <string name="media_scan_excluded">Dieser Ordner wird bei der nächsten Mediensuche ausgeschlossen.</string>
     
     <string name="error_creating_new_folder">Neuer Ordner konnte nicht erstellt werden.</string>
     <string name="error_deleting_file">Datei konnte nicht gelöscht werden.</string>
@@ -78,10 +123,10 @@
     <string name="error_moving_file">Datei konnte nicht verschoben werden.</string>
     <string name="error_moving_folder">Ordner konnte nicht verschoben werden.</string>
     <string name="error_copying_file">Datei kann nicht kopiert werden.</string>
-    <string name="error_file_does_not_exists">Datei existiert nicht.</string>
+    <string name="error_file_does_not_exists">Datei ist nicht vorhanden.</string>
     <string name="error_deleting_child_file">Konnte Unterdatei %s nicht löschen</string>
-    <string name="error_generic">An error occurred: </string>
-    <string name="error_media_scan">Could not change media scan settings.</string>
+    <string name="error_generic">Ein Fehler ist aufgetreten:</string>
+    <string name="error_media_scan">Mediensucheinstellungen konnten nicht verändert werden.</string>
     
     <string name="send_not_available">Keine Anwendung zum Senden vorhanden.</string>
     
@@ -91,12 +136,68 @@
 	     Preferences
 	     *************************** -->
     <!-- Menu item for Settings -->
-	<string name="settings">Settings</string>
+	<string name="settings">Einstellungen</string>
 	
     <!-- Category for preferences. -->
-    <string name="preference_advanced_features">Advanced features</string>
-	<string name="preference_mediascan_title">Exclude from media scan</string>
-    <string name="preference_mediascan_summary_on">Show menu item to exclude folders from media scan.</string>
-    <string name="preference_mediascan_summary_off">Hide menu item to exclude folders from media scan.</string>
+    <string name="preference_advanced_features">Erweitert</string>
+	<string name="preference_mediascan_title">Von Mediensuche ausschließen</string>
+    <string name="preference_mediascan_summary_on">Zeige von der Mediensuche ausgeschlossene Ordner.</string>
+    <string name="preference_mediascan_summary_off">Скрыть пункт меню, что бы исключить папки из сканирования</string>
     
+    <string name="preference_showallwarning_title">Zeige alle Warnungen</string>
+    <string name="preference_showallwarning_summary_on">Zeige alle Warnmeldungen</string>
+    <string name="preference_showallwarning_summary_off">Unterdrücke Warnmeldungen</string>
+       
+    <string name="preference_displayhiddenfiles_title">Zeige versteckte Dateien</string>
+    <string name="preference_displayhiddenfiles_summary_on">Zeige versteckte Dateien</string>
+    <string name="preference_displayhiddenfiles_summary_off">Verberge versteckte Dateien</string>
+    
+    <string name="preference_sort_settings">Sortiereinstellungen</string>
+    <string name="preference_sortby">Sortieren nach</string>
+    <string name="preference_sortby_ascending">In aufsteigender Reihenfolge</string>
+    <string name="preference_sortby_ascending_summary_on">In aufsteigender Reihenfolge sortieren</string>
+    <string name="preference_sortby_ascending_summary_off">In absteigender Reihenfolge sortieren</string>
+    <string-array name="preference_sortby_names">
+        <item>Name</item>
+        <item>Größe</item>
+        <item>Zuletzt geändert</item>
+    </string-array>
+
+        
+    <!-- ***************************
+   		 Strings for the \'Save as\' feature
+    	 *************************** -->
+    <string name="saveas_no_file_picked">Es wurde keine Datei ausgewählt</string>
+    <string name="saveas_error">Es ist ein Fehler aufgetreten.</string>
+    <string name="saveas_file_saved">Datei erfolgreich gespeichert!</string>
+    
+        
+   
+    <string name="bookmarks">Lesezeichen</string>
+    <string name="bookmarks_cancel">Abbrechen</string>
+    <string name="bookmarks_delete">Löschen</string>
+    <string name="bookmarks_select_to_delete">Wähle ein Lesezeichen zum Löschen</string>
+    <string name="bookmarks_manage">Lesezeichen verwalten</string>
+    <string name="bookmark_added">Lesezeichen hinzugefügt</string>
+    <string name="bookmark_not_found">Adresse des Lesezeichens nicht gefunden</string>
+    <string name="bookmarks_deleted">Ausgeählte Lesezeichen wurden gelöscht</string>
+    <string name="bookmark_already_exists">Diese Datei hat schon ein Lesezeichen</string>
+
+
+    <!-- ***************************
+             Strings for the \'Compressing\' and \'Extracting\' feature
+          *************************** -->
+    <string name="compressing_success">Die Datei wurde erfolgreich komprimiert</string>
+    <string name="compressing_error">Die Datei konnte nicht komprimiert werden</string>
+    <string name="compress_into_archive">In ein Archiv komprimieren</string>
+    <string name="extracting_success">Die Datei wurde erfolgreich entpackt</string>
+    <string name="extracting_error">Die Datei konnte nicht entpackt werden</string>
+    <string name="extract_into_folder">In Ordner entpacken</string>
+    <string name="extract_title">Wählen Sie einen Ordner zum Entpacken aus</string>
+    <string name="extract_button">Hierher entpacken</string>
+    <string name="extracting">Entpacke...</string>
+    <string name="compressing">Komprimiere...</string>
+    <string name="warning_overwrite">Die Datei %s existiert schon. Wollen Sie die Datei überschreiben?</string>
+
+    <string name="change_file_extension">Wollen Sie die Dateiendung ändern?</string>
 </resources>
