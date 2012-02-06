@@ -1,4 +1,4 @@
-package org.openintents.filemanager.compatibility;
+package org.openintents.cmfilemanager.compatibility;
 
 import android.content.Context;
 import android.os.IBinder;

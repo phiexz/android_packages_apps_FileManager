@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 /* $Id: BulletedTextListAdapter.java 57 2007-11-21 18:31:52Z steven $ 
  * 
@@ -21,8 +21,8 @@ import java.io.File;
 import java.util.ArrayList; 
 import java.util.List; 
 
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypes;
 
 import android.content.Context; 
 import android.graphics.Bitmap;

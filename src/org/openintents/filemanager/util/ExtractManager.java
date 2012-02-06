@@ -1,11 +1,11 @@
-package org.openintents.filemanager.util;
+package org.openintents.cmfilemanager.util;
 
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.Toast;
-import org.openintents.filemanager.FileManagerActivity;
-import org.openintents.filemanager.R;
+import org.openintents.cmfilemanager.FileManagerActivity;
+import org.openintents.cmfilemanager.R;
 
 import java.io.*;
 import java.util.Enumeration;

@@ -1,4 +1,4 @@
-package org.openintents.filemanager.util;
+package org.openintents.cmfilemanager.util;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

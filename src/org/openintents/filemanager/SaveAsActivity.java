@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

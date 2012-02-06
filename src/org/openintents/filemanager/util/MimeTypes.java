@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.openintents.filemanager.util;
+package org.openintents.cmfilemanager.util;
 
 import java.util.HashMap;
 import java.util.Map;

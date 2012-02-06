@@ -18,7 +18,7 @@
  * Based on AndDev.org's file browser V 2.0.
  */
 
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -29,11 +29,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 import org.openintents.distribution.DistributionLibraryListActivity;
-import org.openintents.filemanager.util.CompressManager;
-import org.openintents.filemanager.util.ExtractManager;
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.MimeTypeParser;
-import org.openintents.filemanager.util.MimeTypes;
+import org.openintents.cmfilemanager.util.CompressManager;
+import org.openintents.cmfilemanager.util.ExtractManager;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.MimeTypeParser;
+import org.openintents.cmfilemanager.util.MimeTypes;
 import org.openintents.intents.FileManagerIntents;
 import org.openintents.util.MenuIntentOptionsWithIcons;
 import org.xmlpull.v1.XmlPullParserException;
@@ -178,7 +178,7 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
 	
 	static {
 		try {
-			org.openintents.filemanager.compatibility.SoftKeyboard.checkAvailable();
+			org.openintents.cmfilemanager.compatibility.SoftKeyboard.checkAvailable();
 			mSoftKeyboardAvailable = true;
 		} catch (Throwable t) {
 			mSoftKeyboardAvailable = false;
@@ -673,7 +673,7 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
      
      private void hideKeyboard(IBinder windowToken, int flags){
     	 if(mSoftKeyboardAvailable){
-    		 (new org.openintents.filemanager.compatibility.SoftKeyboard(this))
+    		 (new org.openintents.cmfilemanager.compatibility.SoftKeyboard(this))
     		 	.hideSoftInputFromWindow(windowToken, flags);
     	 }
      }

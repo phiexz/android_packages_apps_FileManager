@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -19,7 +19,7 @@ public class BookmarksProvider extends ContentProvider implements BaseColumns{
     public static final String NAME = "name";
     public static final String PATH = "path";
     public static final String CHECKED = "checked"; //Only because of multiple choice delete dialog
-    public static final String PROVIDER_NAME = "org.openintents.filemanager.bookmarks";
+    public static final String PROVIDER_NAME = "org.openintents.cmfilemanager.bookmarks";
     public static final Uri CONTENT_URI = 
             Uri.parse("content://"+PROVIDER_NAME);
     public static final String BOOKMARK_MIMETYPE =

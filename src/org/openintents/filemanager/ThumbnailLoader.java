@@ -1,4 +1,4 @@
-package org.openintents.filemanager;
+package org.openintents.cmfilemanager;
 
 import java.lang.ref.SoftReference;
 import java.lang.ref.WeakReference;
@@ -8,8 +8,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import org.openintents.filemanager.util.FileUtils;
-import org.openintents.filemanager.util.ImageUtils;
+import org.openintents.cmfilemanager.util.FileUtils;
+import org.openintents.cmfilemanager.util.ImageUtils;
 
 import android.app.Activity;
 import android.content.Context;
