@@ -30,7 +30,7 @@
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">OI ແຟ້ມ ບໍລີຫານ</string>
+    <string name="app_name">ແຟ້ມ ບໍລີຫານ</string>
     
     <string name="menu_new_folder">New Folder</string>
     
