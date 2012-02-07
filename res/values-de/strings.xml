@@ -34,7 +34,7 @@
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">OI Dateimanager</string>
+    <string name="app_name">Dateimanager</string>
     
     <string name="menu_new_folder">Neuer Ordner</string>
     

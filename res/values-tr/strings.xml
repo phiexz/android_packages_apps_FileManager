@@ -33,7 +33,7 @@ Launchpad Contributions:
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">OI Dosya Yöneticisi</string>
+    <string name="app_name">Dosya Yöneticisi</string>
     
     <string name="menu_new_folder">Yeni Klasör</string>
     

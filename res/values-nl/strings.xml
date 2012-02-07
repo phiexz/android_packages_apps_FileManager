@@ -33,7 +33,7 @@
 	     Applicatio-specific strings
 	     *************************** -->
 	<!-- Name of application. Can be localized. OI = OpenIntents should stay unmodified. -->
-    <string name="app_name">OI Bestandsbeheer</string>
+    <string name="app_name">Bestandsbeheer</string>
     
     <string name="menu_new_folder">Nieuwe Map</string>
     
