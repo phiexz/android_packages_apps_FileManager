@@ -56,10 +56,10 @@ import android.widget.Toast;
  * <br>
  * <p>
  * The location that the backup will be placed is at 
- * <br>/sdcard/open manager/AppBackup/
+ * <br>/sdcard/AppBackup/
  * <br>
- * note: that /sdcard/open manager/ should already exists. This is check at start
- * up from the SettingsManager class.
+ * note: that /sdcard/filemanager_temp/ should already exists. This is check at start
+ * up from the class.
  * 
  * @author Joe Berria <nexesdevelopment@gmail.com>
  */
@@ -157,9 +157,9 @@ public class ApplicationBackup extends ListActivity implements OnClickListener {
 		public BackgroundWork(ArrayList<ApplicationInfo> data)  {
 			mDataSource = data;
 			mData =  new byte[BUFFER];
-						
+
 			/*create dir if needed*/
-			File d = new File("/sdcard/open manager/");
+			File d = new File("/sdcard/filemanager_temp/");
 			if(!d.exists()) {
 				d.mkdir();
 				
