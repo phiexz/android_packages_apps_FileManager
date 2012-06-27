@@ -147,6 +147,7 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
 	private static final int MENU_COMPRESS = Menu.FIRST + 20;
 	private static final int MENU_EXTRACT = Menu.FIRST + 21;
 	private static final int MENU_REFRESH = Menu.FIRST + 22;
+	private static final int MENU_BACKUPSETTINGS = Menu.FIRST + 23;
 	private static final int MENU_DISTRIBUTION_START = Menu.FIRST + 100; // MUST BE LAST
 	
 	private static final int DIALOG_NEW_FOLDER = 1;
@@ -1182,6 +1183,9 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
 		menu.add(0, MENU_SETTINGS, 0, R.string.settings).setIcon(
 				android.R.drawable.ic_menu_preferences).setShortcut('9', 'p');
 		
+		menu.add(0, MENU_BACKUPSETTINGS, 0, R.string.menu_backset).setIcon(
+				R.drawable.icon_file);
+
 		/* We don't want to allow the user to override a filter set
 		 * by an application.
 		 */
@@ -1268,6 +1272,10 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
 		case MENU_REFRESH:
 			refreshList();
 			return true;
+
+		case MENU_BACKUPSETTINGS:
+			showBackupSettings();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 
@@ -1278,6 +1286,11 @@ public class FileManagerActivity extends DistributionLibraryListActivity impleme
 		startActivity(intent);
 	}
 	
+    private void showBackupSettings() {
+		Intent intent = new Intent(this, ApplicationBackup.class);
+		startActivity(intent);
+	}
+
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View view,
 			ContextMenuInfo menuInfo) {
